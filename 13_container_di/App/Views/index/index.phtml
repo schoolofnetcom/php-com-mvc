@@ -1,0 +1,11 @@
+Controller: indexController   Action: index View: index
+
+<br/>
+
+<?php foreach($this->views->clients as $client): ?>
+
+    <p><?= $client["name"] ?></p>
+    <p><?= $client["email"] ?></p>
+    <hr>
+
+<?php endforeach; ?>
